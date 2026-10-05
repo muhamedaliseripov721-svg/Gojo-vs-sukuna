@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    background: black;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.video-gojo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    inset: 0;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    text-shadow: 0 0 20px blue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+.ph {
+    background: white;
+    color: black;
+    border: 3px solid rgb(99, 99, 228);
+    transition: 0.3s;
+    box-shadow: 0 0 10px blue;
+}
+
+.ph:hover {
+    transform: translateY(-6px);
+    border: 3px solid blue;
+    box-shadow: 0 0 30px blue;
+}
+
+.ps {
+    background: white;
+    color: black;
+    border: 3px solid rgb(228, 99, 99);
+    transition: 0.3s;
+    box-shadow: 0 0 10px red;
+}
+
+.ps:hover {
+    border: 3px solid red;
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px red;
+}
+
+.pw {
+    background: white;
+    color: black;
+    border: 3px solid rgb(151, 99, 228);
+    transition: 0.3s;
+    box-shadow: 0 0 10px purple;
+}
+
+.pw:hover {
+    border: 3px solid purple;
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px purple;
+}
+
+.music {
+    display: flex;
+    gap: 20p;
+}
+
+.bts {
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    border: 3px solid rgb(121, 121, 229);
+    box-shadow: 0 0 5px blue;
+    transition: 0.3s;
+}
+
+.bts:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px blue;
+    border: 3px solid blue;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.text {
+    max-width: 900px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.text h1 {
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 30px blue;
+}
+
+.text p {
+    color: white;
+    text-shadow: 0 0 20px blue;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgg {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 70px;
+    margin-left: 80px;
+    z-index: 2;
+}
+
+.imm {
+    width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 162, 255);
+    box-shadow: 0 0 20px blue;
+}
+
+.imw {
+    width: 365px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 162, 255);
+    box-shadow: 0 0 20px blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.imh {
+    width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 162, 255);
+    box-shadow: 0 0 20px blue;
+}
+
+.cardsh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.hi {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+    font-weight: 800;
+    text-shadow: 10px 10px 30px blue;
+    
+}
+
+.image {
+    background: white;
+    padding: 30px;
+    border-radius: 35px;
+    width: 500px;
+    height: 320px;
+    transition: 0.5s;
+    border: 3px solid rgb(102, 102, 232);
+    box-shadow: 0 0 10px blue;
+}
+
+.image:hover {
+    transform: scale(1.070);
+    border: 3px solid blue;
+    box-shadow: 0 0 40px blue;
+}
+
+.image img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid blue;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.image h1 {
+    display: flex;
+    color: rgb(84, 68, 228);
+    text-shadow: 0 0 30px blue;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.image p {
+    display: flex;
+    color: black;
+    text-shadow: 0 0 20px blue;
+    font-size: 20px;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.is {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.tett {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 0 20px 30px blue;
+    margin: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    gap: 35px;
+}
+
+article {
+    background: rgb(208, 203, 203);
+    border-radius: 40px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    width: 550px;
+    height: 250px;
+    border: none;
+    background: rgb(41, 48, 48);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 0 20px blue;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.060);
+    box-shadow: 0 0 40px blue;
+}
+
+.card h1 {
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 30px rgb(0, 0, 255);
+    font-size: 35px;
+    font-weight: 900;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 25px;
+    text-shadow: 0 0 10px blue;
+    margin: 10px;
+}
+
+.btl {
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 12px;
+    background: rgb(19, 192, 19);
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.btl:hover {
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    padding: 7px;
+    color: white;
+    background: blue;
+    border: 2px solid blue;
+    margin-top: 30px;
+    text-align: center;
+}
